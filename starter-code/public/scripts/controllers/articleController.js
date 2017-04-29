@@ -6,6 +6,9 @@
   // code that used to be in index.html.
   // Also be sure to hide all the main section elements, and reveal the #articles section:
 
-
+  articleController.showArticles = () => {
+    $('#about').hide();
+    $('#articles').show();
+  }
   module.articleController = articleController;
 })(window);
