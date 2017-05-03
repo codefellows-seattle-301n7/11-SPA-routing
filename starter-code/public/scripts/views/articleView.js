@@ -51,6 +51,7 @@
   /* TODO: Once the routes are handling '/' and '/about', we can delete
       this handleMainNav function. YESSSS! */
 
+  /*
   articleView.handleMainNav = function() {
     $('.main-nav').on('click', '.tab', function() {
       $('.tab-content').hide();
@@ -59,7 +60,7 @@
 
     $('.main-nav .tab:first').click();
   };
-
+*/
   articleView.setTeasers = function() {
     $('.article-body *:nth-of-type(n+2)').hide();
     $('article').on('click', 'a.read-on', function(e) {
@@ -93,7 +94,9 @@
     articleView.populateFilters();
     articleView.handleCategoryFilter();
     articleView.handleAuthorFilter();
+    /*
     articleView.handleMainNav();
+    */
     articleView.setTeasers();
     $('pre code').each((i, block) => hljs.highlightBlock(block));
   };
